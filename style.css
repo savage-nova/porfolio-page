@@ -6,42 +6,36 @@ background: url("https://www.toptal.com/designers/subtlepatterns/patterns/white_
 }
 
 /* Header */
-
-.navbar{
-border-bottom: 2px solid #D7BDE2;
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
 }
 
-.navbar-nav {
-flex-direction: row;
+.sidenav a {
+  padding: 6px 6px 6px 32px;
+  text-decoration: underline;
+  font-size: 25px;
+  color: #818181;
+  display: block;
 }
 
-.border-right{
-color:#D7BDE2 !important;
+.sidenav a:hover {
+  color: #f1f1f1;
 }
-
-.navbar-brand{
-background-color: #D7BDE2;
-color: #ffffff !important;
-height: 80px;
-width: 270px;
-font-family: 'Georgia', Times, 'Times New Roman', serif;
-font-size: 26px;
-font-weight: bold;
-text-align: center;
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
 }
 
 main a {
 font-weight: 700;
-text-decoration: none;
-}
-
-nav-link a:link { color: #38786a; }
-nav-link a:visited { color: #38786a; }
-nav-link a:hover { color: #403933; }
-a:active { color: #403933; }
-
-
-a:hover {
 text-decoration: underline;
 }
 
