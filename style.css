@@ -1,64 +1,221 @@
+/* Global */
 
-/* 
-	STYLE.CSS:
-	One stylesheet to rule them all.
-	
-	selector { property:value }
-	
-*/
-
-@import url(https://fonts.googleapis.com/css?family=Fredericka+the+Great|Lato);
-
-body {
-  background-color: #5f5345;
-}
- 
-.pageContainer {
-  width: 940px;
-  margin: 20px auto 0 auto;
-  padding: 20px;
-  background-color: #fff;
-}
- 
-.imageContainer {
-  float: left;
-  width: 620px;
-}
- 
-.textContainer {
-  float: left;
-  width: 300px;
-  margin-left: 20px;
-  margin-top: 20px;
+html, body{
+font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+background: url("https://www.toptal.com/designers/subtlepatterns/patterns/white_wall2.png");
 }
 
-img {
-  width: 100%;
-}
- 
-h1 {
-  font-family: 'Fredericka the Great', cursive;
-  font-size: 64px;
-  color: #8b1b00;
-}
- 
-p, li {
-  font-family: 'Lato', sans-serif;
-  font-size: 22px;
-  color: #51473b;
+/* Header */
+
+.navbar{
+border-bottom: 2px solid #D7BDE2;
 }
 
-
-
-
-/* ---- Advanced ---- */
-/* This tag is a bit advanced for this lesson,  
-   but is needed to wrap the pageContainer 
-   around any sized content that is floated within it. */
-
-.pageContainer:after { 
-  content: " ";
-  display: table;
-  clear: both;
+.navbar-nav {
+flex-direction: row;
 }
- 
+
+.border-right{
+color:#D7BDE2 !important;
+}
+
+.navbar-brand{
+background-color: #D7BDE2;
+color: #ffffff !important;
+height: 80px;
+width: 270px;
+font-family: 'Georgia', Times, 'Times New Roman', serif;
+font-size: 26px;
+font-weight: bold;
+text-align: center;
+}
+
+main a {
+font-weight: 700;
+text-decoration: none;
+}
+
+nav-link a:link { color: #38786a; }
+nav-link a:visited { color: #38786a; }
+nav-link a:hover { color: #403933; }
+a:active { color: #403933; }
+
+
+a:hover {
+text-decoration: underline;
+}
+
+/* Main Area */
+
+hr{
+border-bottom: 3px solid #D7BDE2;
+}
+
+.collapse:not(.show){
+display: inline;
+}
+
+.about_me{
+font-family: 'Georgia', Times, 'Times New Roman', serif;
+color: #D7BDE2;
+font-size: 26px;
+font-weight: bold;
+}
+
+.main{
+background-color: #fff;
+border: 1px solid #D7BDE2;
+margin-bottom: 15%;
+}
+
+p{
+font-size: 17px;
+line-height: 32px;
+}
+
+/*Portfolio*/
+
+.group{
+margin: 0;
+padding: 0;
+position: relative;
+margin-bottom: 5%;
+}
+
+.img_text{
+height: 30%;
+width: 280px;
+font-family: Georgia, 'Times New Roman', Times, serif;
+color: #ffffff;
+text-align: center;
+background-color: #4aaaa5;
+padding-top: 3%;
+position: absolute;
+top: 60%;
+}
+
+/*Contact*/
+
+.btn {
+padding: 8px 25px 8px 25px;
+text-align: center;
+font-size: 17px;
+color: #ffffff;
+background-color: #4aaaa5;
+border-bottom: 2px solid #dddddd;
+}
+
+form {
+padding-right: 15px;
+/* Fixed small sizing issue on the right */
+}
+
+form label {
+display: block;
+padding: 15px;
+}
+
+form input,
+form textarea {
+padding: 15px;
+width: 100%;
+margin-bottom: 20px;
+}
+
+form textarea {
+height: 160px;
+padding: 15px;
+}
+
+.item-double {
+padding: 15px;
+}
+
+/* Footer */
+
+.fixed-bottom {
+border-top: 8px solid #D7BDE2;
+background-color: #666666;
+text-align: center;
+font-size: 12px;
+color:#dddddd;
+width: 100%;
+height: 60px;
+margin-top: 60px;
+}
+
+#footer{
+padding-top: 1.2%;
+}
+
+/* Media Query */
+
+/* Extra small devices (portrait phones, less than 576px) */
+
+@media (max-width: 575.98px) {
+
+.container{
+margin: 0 !important;
+padding: 0 !important;
+}
+
+ul.navbar-nav{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.navbar-brand {
+flex: 100%;
+margin: 0;
+}
+
+.navbar-nav .nav-link {
+padding-right: 10px !important;
+padding-left: 5px !important;
+}
+
+.img_responsive{
+display: flex;
+justify-content: center;
+margin-right: 7%;
+}
+
+p{
+margin-top: 5%;
+}
+}
+
+/* Small devices (landscape phones, 576px and up) */
+
+@media (min-width: 576px) {
+
+ul.navbar-nav{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.navbar-brand {
+margin: auto;
+}
+
+.navbar-nav .nav-link {
+padding-right: 10px !important;
+padding-left: 5px !important;
+}
+
+.img_responsive{
+display: flex;
+justify-content: center;
+margin-right: 5%;
+}
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+
+@media (min-width: 1200px) {
+.container{
+max-width: 960px;
+}
+}
