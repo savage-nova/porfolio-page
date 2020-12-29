@@ -127,12 +127,16 @@ padding: 15px;
 padding: 15px;
 }
 
-.social-link {
+.social-icon {
     padding: 6px 6px 6px 32px;
   text-decoration: underline;
   font-size: 25px;
   color: #818181;
   display: block;
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+}
 }
 
 /* Footer */
