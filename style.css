@@ -43,7 +43,7 @@ text-decoration: underline;
 
 
 hr{
-border-bottom: 3px solid #D7BDE2;
+border-bottom: 3px solid #ff137a;
   color: #ff137a;
 }
 
@@ -51,10 +51,10 @@ border-bottom: 3px solid #D7BDE2;
 display: inline;
 }
 
-.about_me, h3{
+.about_me, contact, projects, h3{
 font-family: 'Georgia', Times, 'Times New Roman', serif;
 color: #D7BDE2;
-font-size: 26px;
+font-size: 20px;
 font-weight: bold;
 }
 
