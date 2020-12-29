@@ -39,6 +39,11 @@ font-weight: 700;
 text-decoration: underline;
 }
 
+a:link { color: #FC849C; }
+a:visited { color: #FFFFFF; }
+a:hover { color: #5D0399; }
+a:active { color: #9B0387; }
+
 /* Main Area */
 
 
